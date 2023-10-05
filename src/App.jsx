@@ -3,25 +3,8 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber'
 import Overlay from './Overlay'
 import Crosshair from './Crosshair';
-
-function Sphere()  {
-  return (
-    <mesh  position={[-2, 0, -5]}>
-      <sphereGeometry />
-      <meshStandardMaterial color="red" />
-    </mesh>
-  );
-}
-
-function Sphere2()  {
-  return (
-    <mesh  position={[2, 0, -5]}>
-      <sphereGeometry r/>
-      <meshStandardMaterial color="hotpink" />
-    </mesh>
-  );
-}
-
+import {Sphere, Sphere2} from './Spheres';
+import {Room} from './Room';
 
 
 export default function App() {
@@ -45,6 +28,8 @@ export default function App() {
         
         <Sphere />
         <Sphere2 />
+
+        <Room />
 
         <PointerLockControls  />
         <Stats />
