@@ -1,0 +1,29 @@
+/* crosshair.css */
+.crosshair {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: calc(50% - 10px); /* Center vertically */
+    left: calc(50% - 10px); /* Center horizontally */
+    pointer-events: none; /* Ensure the crosshair doesn't interfere with clicks */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .horizontal,
+  .vertical {
+    position: absolute;
+    background-color: #00000098; /* Crosshair color (white in this case) */
+  }
+  
+  .horizontal {
+    width: 20px;
+    height: 2px; /* Adjust the length of the horizontal line */
+  }
+  
+  .vertical {
+    width: 2px; /* Adjust the width of the vertical line */
+    height: 20px;
+  }
+  
